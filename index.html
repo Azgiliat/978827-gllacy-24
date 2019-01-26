@@ -2,19 +2,19 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="keywords" content="Glaccy магазин мороженого мороженое вкусности">
+    <meta name="description" content="Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороденого собственного производства на развес"
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
     <h1 class="visually_hidden">Магазин мороженного Gllacy</h1>
 <header class="main_header">
-  <div class="logotype">
-  <a> <img src="img/logo.jpg" alt="Наш чудесный логотипчик"> </a>
-</div>
   <nav>
+      <a class="main_logo"> <img src="img/logo.jpg" alt="Наш чудесный логотипчик"> </a>
       <ul class="main_navigation">
-      <li><a href="catalog.html">Каталог</a></li>
-      <li><a href="delivey_and_payment.html">Доставка и оплата</a></li>
-      <li><a href="about_company.html">О Компании</a></li>
+      <li><a class="main_navigation_link" href="catalog.html">Каталог</a></li>
+      <li><a class="main_navigation_link" href="delivey_and_payment.html">Доставка и оплата</a></li>
+      <li><a class="main_navigation_link" href="about_company.html">О Компании</a></li>
     </ul>
     <ul class="user_navigation">
       <li><button type="button" class="search_button"></button></li>
@@ -22,41 +22,80 @@
       <li><a href="basket.html">Корзина</a></li>
     </ul>
   </nav>
-  <p> С 10 до 20, ежедневно<br>
+  <p class="our_timetable"> С 10 до 20, ежедневно
     8 812 450-25-25
   </p>
 </header>
 <main class="container">
+  <section class="hits">
+    <h2 class="visually_hidden">Хиты продаж</h2>
+    <section class="product_card">
+      <a class="product_name" href="products/creamy_orange.html">
+      <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+      </a>
+      <img src="img/ice_cream_photos/creamy_orange.jpg" alt="Для любителей апельсинок">
+      <img src="img/hit.jpg" alt="Хит">
+      <span class="price"> 310₽</span><span class="weigth">/кг</span>
+    </section>
+    <section class="product_card">
+      <a class="product_name" href="products/creamy_coffee.html">
+      <h3>Сливочно-кофейное с кусочками шоколада</h3>
+      </a>
+      <img src="img/ice_cream_photos/creamy_coffee.jpg" alt="Для любителей кофе во всех его видах">
+      <img src="img/hit.jpg alt="Хит"">
+      <span class="price">380₽</span><span class="weigth">/кг</span>
+    </section>
+    <section class="product_card">
+      <a class="product_name" href="products/creamy_strawberry.html">
+      <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+      </a>
+      <img src="img/ice_cream_photos/creamy_strawberry.jpg" alt="Для любителей клубники и белого шоколада">
+      <img src="img/hit.jpg alt="Хит"">
+      <span class="price">355₽</span><span class="weigth">/кг</span>
+    </section>
+        <section class="product_card">
+        <a class="product_name" href="products/creamy_caramel.html">
+        <h3>Сливочное крем-брюле с карамельной подливкой</h3>
+        </a>
+        <img src="img/ice_cream_photos/creamy_caramel.jpg" alt="Для любителей карамели">
+        <img src="img/hit.jpg alt="Хит"">
+        <span class="price">415₽</span><span class="weigth">/кг</span>
+      </section>
+  </section>
 <section class="about_us">
-  <h2 class="visually_hidden">О нас</h2>
-  <p><i>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороденого собственного производства на развес</i></p>
-  <div class="left_colomn"><p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p><p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья</p></div>
-  <div class="right_colomn"><p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p><p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p></div>
+  <h2>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороденого собственного производства на развес</h2>
+  <div class="about_us_description">
+    <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+    <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья</p>
+    <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+    <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+  </div>
 </section>
 <article class="our_blog">
   <h2>Новое в нашем блоге</h2>
-  <a href="blog.html"><img src="img/picture_for_blog.jpg" alt="Наш блог"></a>
-  <a href="blog.html"><b>10 способов свервировки фруктовых щербетов к стоул</b></a>
+  <a class="our_blog_articles" href="blog.html">10 способов свервировки фруктовых щербетов к стоул</a>
 </article>
 <section class="mailing">
   <h2 class="visually_hidden">Рассылка</h2>
   <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-  <span></span>
   <button type="submit" class="mailing_button">Отправить</button>
+</section>
+<section class="our_location">
+  <img src="our_location.jpg" alt="А вот тут мы находимся. Приходите!">
 </section>
 </main>
 <footer>
-<ul class="our_links">
-    <li><a href="twitter.com/glaccy"><img src="img/twitter_logo.jpg" alt="Наш твиттер"></a></li>
-    <li><a href="instagram.com/glaccy"><img src="img/instagram_logo.jpg" alt="Наш Инстаграм"></a></li>
-    <li><a href="facebook.com/glaccy"><img src="img/facebook_logo.jpg" alt="Наша ЛицоКнижка"></a></li>
-    <li><a href="vk.com/glaccy"><img src="img/vk_logo.jpg" alt="Наш ВК"></a></li>
+<ul class="social_networks">
+    <li><a class="social_networks_link" href="twitter.com/glaccy"><img src="img/twitter_logo.jpg" alt="Наш твиттер"></a></li>
+    <li><a class="social_networks_link" href="instagram.com/glaccy"><img src="img/instagram_logo.jpg" alt="Наш Инстаграм"></a></li>
+    <li><a class="social_networks_link" href="facebook.com/glaccy"><img src="img/facebook_logo.jpg" alt="Наша ЛицоКнижка"></a></li>
+    <li><a class="social_networks_link" href="vk.com/glaccy"><img src="img/vk_logo.jpg" alt="Наш ВК"></a></li>
 </ul>
   <ul class="documents">
-    <li><a href="for_providers.html">Для поставщиков</a></li>
-    <li><a href="about_production.html">О производстве</a></li>
-    <li><a href="our_documents.html">Наши документы</a></li>
-    <li><a href="environmental_standards.html">Экологические стандарты</a></li>
+    <li><a class="documents_links" href="for_providers.html">Для поставщиков</a></li>
+    <li><a class="documents_links" href="about_production.html">О производстве</a></li>
+    <li><a class="documents_links" href="our_documents.html">Наши документы</a></li>
+    <li><a class="documents_links" href="environmental_standards.html">Экологические стандарты</a></li>
   </ul>
   <div class="developer">
     <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy_logo.jpg" alt="Наша любимая академия"> Сделано в HTMLAcademy<sup>©</sup>2019</a>
