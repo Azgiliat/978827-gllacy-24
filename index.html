@@ -12,7 +12,7 @@
   <h1 class="visually_hidden">Магазин мороженного Gllacy</h1>
   <header class="main_header">
     <nav>
-      <a class="main_logo"> <img src="img/logo.jpg" alt="Наш чудесный логотипчик"> </a>
+      <a class="main_logo"> <img src="img/Logo.png" alt="Наш чудесный логотипчик"> </a>
       <ul class="main_navigation">
         <li><a class="main_navigation_link" href="catalog.html">Каталог</a></li>
         <li><a class="main_navigation_link" href="delivey_and_payment.html">Доставка и оплата</a></li>
@@ -32,26 +32,17 @@
     <section class="slider">
       <h2 class="visually_hidden">Слайдер</h2>
         <ul>
-          <li>
-            <div class="slider_element">
-            <img src="slider/slider_element_1.jpg" alt="Крем-брюле и пломбир с малиновым джемом">
+          <li class="slider_element slider_element_1">
             <h3 class="slider_elements_headline">Крем-брюле и пломбир с малиновым джемом</h3>
             <a class="slider_element_button" href="slider_element_1.html">Давайте оба!</a>
-          </div>
           </li>
-          <li>
-            <div class="slider_element">
-            <img src="slider/slider_element_2.jpg" alt="Шоколадный пломбир и лемонный сорбет">
+          <li class="slider_element slider_element_2">
             <h3 class="slider_elements_headline">Шоколадный пломбир и лемонный сорбет</h3>
             <a class="slider_element_button" href="slider_element_2.html">Давайте оба!</a>
-          </div>
           </li>
-          <li>
-            <div class="slider_element">
-            <img src="slider/slider_element_3.jpg" alt="Пломбир с помадкой и клубничный щербет">
+          <li class="slider_element slider_element_3" >
             <h3 class="slider_elements_headline">Пломбир с помадкой и клубничный щербет</h3>
             <a class="slider_element_button" href="slider_element_3.html">Давайте оба!</a>
-          </div>
           </li>
         </ul>
       <div class="slider_navigation">
@@ -66,11 +57,11 @@
       <h2 class="visually_hidden">Акции</h2>
       <div class="stock_element">
         <h3 class="stock_headline">Малинка даром!</h3>
-        <span class="stock_element_description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</span>
+        <p class="stock_element_description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
       </div>
       <div class="stock_element">
         <h3 class="stock_headline">Шоколадки даром!</h3>
-        <span class="stock_element_description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно..</span>
+        <p class="stock_element_description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно..</p>
       </div>
     </section>
     <section class="hits">
@@ -128,16 +119,24 @@
     </section>
     <section class="our_location">
       <h2 class="visually_hidden">Наше местоположение</h2>
-      <img src="our_location.jpg" alt="А вот тут мы находимся. Приходите!">
+      <img src="img/index/our_location/map.jpg" alt="А вот тут мы находимся. Приходите!">
+      <div class="our_location_description">
+        Адрес главного офиса и офлайн-магазина:
+        <p class="adress">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+        Для заказов по телефону:
+        <p class="adress">8 812 450-25-25</p>
+        (с 10 до 20 ежедневно)
+        <button type="button" class="map_button">Форма обратной связи</button>
+      </div>
     </section>
   </main>
   <footer>
-    <ul class="social_networks">
-      <li><a class="social_networks_link" href="twitter.com/glaccy"><img src="img/twitter_logo.jpg" alt="Наш твиттер"></a></li>
-      <li><a class="social_networks_link" href="instagram.com/glaccy"><img src="img/instagram_logo.jpg" alt="Наш Инстаграм"></a></li>
-      <li><a class="social_networks_link" href="facebook.com/glaccy"><img src="img/facebook_logo.jpg" alt="Наша ЛицоКнижка"></a></li>
-      <li><a class="social_networks_link" href="vk.com/glaccy"><img src="img/vk_logo.jpg" alt="Наш ВК"></a></li>
-    </ul>
+  <ul class="social_networks">
+      <li><a class="social_networks_link" href="twitter.com/glaccy"><img src="img/social_networks/twitter.png" alt="Наш твиттер"></a></li>
+      <li><a class="social_networks_link" href="instagram.com/glaccy"><img src="img/social_networks/insta.png" alt="Наш Инстаграм"></a></li>
+      <li><a class="social_networks_link" href="facebook.com/glaccy"><img src="img/social_networks/facebook.png" alt="Наша ЛицоКнижка"></a></li>
+      <li><a class="social_networks_link" href="vk.com/glaccy"><img src="img/social_networks/vk.png" alt="Наш ВК"></a></li>
+  </ul>
     <ul class="documents">
       <li><a class="documents_links" href="for_providers.html">Для поставщиков</a></li>
       <li><a class="documents_links" href="about_production.html">О производстве</a></li>
@@ -145,7 +144,7 @@
       <li><a class="documents_links" href="environmental_standards.html">Экологические стандарты</a></li>
     </ul>
     <div class="developer">
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy_logo.jpg" alt="Наша любимая академия"> Сделано в HTMLAcademy<sup>©</sup>2019</a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy-small.png" alt="Наша любимая академия"> Сделано в HTMLAcademy<sup>©</sup>2019</a>
     </div>
   </footer>
 </body>
