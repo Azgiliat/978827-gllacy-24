@@ -1,0 +1,336 @@
+.body_main {
+  margin: 0;
+  padding: 0;
+
+  /*font-family: "PT Sans Narrow", Arial, sans-serif;*/
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
+  color: #000000;
+  text-transform: normal;
+
+  background-color: #849d8f;
+  background-image: url("../img/backs/slider_1.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.body_creamy {
+    background-color: #849d8f;
+}
+
+a {
+  text-decoration: none;
+}
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+
+.main_navigation,
+.user_navigation,
+.catalog_submenu {
+  list-style: none;
+}
+.main_navigation a {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #ffffff;
+  text-transform: normal;
+}
+.user_button {
+  font-size: 14px;
+  line-height: 16px;
+  color:#ffffff;
+
+  opacity: 0.2;
+  background-color: #000000;
+}
+.search_button {
+ width: 33px;
+ height: 33px;
+
+ background-image: url("../img/icons/loupe.svg");
+ background-repeat: no-repeat;
+ background-position: center center;
+
+ border-radius: 50px;
+}
+.login_button {
+  width: 93px;
+  height: 32px;
+
+  background-image: url("../img/icons/login.svg");
+  background-position: left center;
+  background-repeat: no-repeat;
+
+  border-radius: 30px;
+}
+.basket_button {
+  width: 100px;
+  height: 33px;
+  padding: 11px 17px 9px 45px;
+
+  background-image: url("../img/icons/basket_empty.svg");
+  background-position: left center;
+  background-repeat: no-repeat;
+
+  border-radius: 30px;
+}
+.our_timetable {
+  color: #ffffff;
+}
+.work_hours {
+  font-size: 14px;
+  line-height: 16px;
+}
+.phone_number {
+  font-size: 22px;
+  line-height: 24px;
+}
+.slider ul {
+  list-style: none;
+}
+.slider_elements_headline {
+  width: 665px;
+  height: 116px;
+
+  font-size: 60px;
+  line-height: 60.5px;
+  color: #ffffff;
+}
+.stock {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 22px;
+
+  width: 560px;
+  height: 229px;
+  border-radius: 15px;
+}
+.stock h3 {
+  font-size: 35px;
+  line-height: 41px;
+}
+.stock a {
+  color: #ffffff;
+}
+.stock_element_1 {
+  background-image: url("../img/backs/raspberries.jpg");
+  background-repeat: no-repeat;
+  border-radius: 15px;
+
+}
+.stock_element_2 {
+  background-image: url("../img/backs/chocolate.jpg");
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+.stock_element_1 .stock_button {
+  font-size: 18px;
+  line-height: 24px;
+
+  padding: 15px 24px 14px 22px;
+
+  border-radius: 30px;
+}
+.stock_element_2 .stock_button {
+  font-size: 18px;
+  line-height: 24px;
+
+  padding: 14px 22px 14px 21px;
+
+  border-radius: 30px;
+}
+
+.hits a {
+  font-size: 16px;
+  line-height: 22px;
+  color:#ffffff;
+}
+.price {
+  font-size: 45px;
+  line-height: 45px;
+  color:#ffffff;
+}
+.weigth {
+  font-size: 30px;
+  line-height: 45px;
+  color:#ffffff;
+}
+.product_name h3 {
+  width: 242px;
+  height: 39px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color:#ffffff;
+}
+
+.about_us {
+  width: 1146px;
+  height: 306px;
+  border-radius: 15px;
+
+  background-image: url("../img/backs/wafer_back.jpg");
+  background-repeat: no-repeat;
+
+  color:#323232;
+}
+.about_us h2 {
+  width: 1013px;
+  height: 54px;
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.our_blog {
+  width: 560px;
+  height: 220px;
+
+  border-radius: 15px;
+
+  background-image: url("../img/backs/strawberry.jpg");
+}
+.our_blog h2{
+  width: 161px;
+  height: 14px;
+
+  color: #323232;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+.our_blog a {
+  width: 279px;
+  height: 84px;
+
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #323232;
+}
+
+.mailing {
+  width: 560px;
+  height: 220px;
+
+  background-image: url("../img/backs/mailing.png");
+  background-repeat: no-repeat;
+
+  color: #5a5a5a;
+}
+.mailing form {
+ width: 549px;
+ height: 211px;
+ margin-top: -78px;
+
+
+ border-radius: 10px;
+ background-color: #f8f7f4;
+}
+.our_location_description {
+ width: 302px;
+ height: 305px;
+ background-color: #ffffff;
+
+ font-size: 14px;
+ line-height: 20px;
+ color: #323232;
+}
+.adress {
+  font-size: 18px;
+  line-height: 24px;
+}
+.social_networks,
+.documents {
+  list-style: none;
+}
+.social_networks_link {
+  width: 38px;
+  height: 38px;
+  opacity: 0.1;
+
+  border-radius: 50px;
+
+  background-color: #849d8f;
+  display: inline-block;
+}
+.twitter_link {
+  background-image: url("../img/icons/twitter.svg");
+  background-repeat: no-repeat;
+}
+.insta_link {
+  background-image: url("../img/icons/insta.svg");
+  background-repeat: no-repeat;
+}
+.facebook_link {
+  background-image: url("../img/icons/facebook.svg");
+  background-repeat: no-repeat;
+}
+.vk_link {
+  background-image: url("../img/icons/vk.svg");
+  background-repeat: no-repeat;
+}
+.documents_links {
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+}
+.documents li:first-child a {
+  font-weight: bold;
+  color: #ffffff;
+}
+.developer {
+  width: 108px;
+  height: 39px;
+
+}
+.developer a{
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+}
+.visually_hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.button {
+  opacity: 0.99;
+  box-shadow: 0px 2px 2px 0 rgba(85, 8, 0, 0.54);
+  background-image: linear-gradient(to top, #ca3824, #f26843);
+
+  color: #ffffff;
+}
+.button:hover {
+  opacity: 0.99;
+box-shadow: 0px 2px 2px 0 #ac1000;
+background-image: linear-gradient(to top, #e74a35, #f26843), linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+}
+.button:active {
+box-shadow: inset 0px 2px 2px 0 #942718;
+background-image: linear-gradient(to bottom, #e74a35, #f26843), linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
+}
+.mailing_button {
+  width: 129px;
+  height: 44px;
+  border-radius: 20px;
+}
+.catalog_submenu {
+  display: none;
+}
+.main_navigation_link:hover+.catalog_submenu {
+  display: block;
+  width: 173px;
+  height: 143px;
+}
