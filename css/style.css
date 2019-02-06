@@ -3,7 +3,7 @@
   padding: 0;
 
   /*font-family: "PT Sans Narrow", Arial, sans-serif;*/
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
@@ -39,27 +39,40 @@ html { box-sizing: border-box; }
   color: #ffffff;
   text-transform: normal;
 }
+.main_navigation a:hover {
+  background-color: #f7f6f3;
+  color: #333333;
+}
+.main_navigation a:active {
+  box-shadow: inset 0px 2px 1px 0 #696969;
+  background-color: #ededed;
+  color: #323232;
+}
 .user_button {
   font-size: 14px;
   line-height: 16px;
   color:#ffffff;
 
   opacity: 0.2;
-  background-color: #000000;
+  background-color: #ffffff;
 }
-.search_button {
+.user_button:hover {
+  background-color: #f7f6f3;
+  color: #323232;
+}
+}
+.search_button { /*Пофиксить эту грешную лупу!!!*/
  width: 33px;
  height: 33px;
 
  background-image: url("../img/icons/loupe.svg");
  background-repeat: no-repeat;
  background-position: center center;
-
  border-radius: 50px;
+
 }
 .login_button {
   width: 93px;
-  height: 32px;
 
   background-image: url("../img/icons/login.svg");
   background-position: left center;
@@ -69,7 +82,6 @@ html { box-sizing: border-box; }
 }
 .basket_button {
   width: 100px;
-  height: 33px;
   padding: 11px 17px 9px 45px;
 
   background-image: url("../img/icons/basket_empty.svg");
@@ -77,6 +89,15 @@ html { box-sizing: border-box; }
   background-repeat: no-repeat;
 
   border-radius: 30px;
+}
+.full_basket {
+  color: #323232;
+  font-size: 14px;
+  line-height: 16px;
+
+  background-image: url("../img/icons/full_basket.svg");
+  background-position: left center;
+  background-repeat: no-repeat;
 }
 .our_timetable {
   color: #ffffff;
@@ -94,7 +115,6 @@ html { box-sizing: border-box; }
 }
 .slider_elements_headline {
   width: 665px;
-  height: 116px;
 
   font-size: 60px;
   line-height: 60.5px;
@@ -106,7 +126,7 @@ html { box-sizing: border-box; }
   line-height: 22px;
 
   width: 560px;
-  height: 229px;
+
   border-radius: 15px;
 }
 .stock h3 {
@@ -152,16 +172,17 @@ html { box-sizing: border-box; }
 .price {
   font-size: 45px;
   line-height: 45px;
+  font-weight: bold;
   color:#ffffff;
 }
 .weigth {
   font-size: 30px;
   line-height: 45px;
+  font-weight: bold;
   color:#ffffff;
 }
 .product_name h3 {
   width: 242px;
-  height: 39px;
 
   font-weight: 500;
   font-size: 16px;
@@ -171,7 +192,7 @@ html { box-sizing: border-box; }
 
 .about_us {
   width: 1146px;
-  height: 306px;
+
   border-radius: 15px;
 
   background-image: url("../img/backs/wafer_back.jpg");
@@ -181,7 +202,6 @@ html { box-sizing: border-box; }
 }
 .about_us h2 {
   width: 1013px;
-  height: 54px;
 
   font-size: 24px;
   line-height: 30px;
@@ -190,15 +210,12 @@ html { box-sizing: border-box; }
 
 .our_blog {
   width: 560px;
-  height: 220px;
-
   border-radius: 15px;
 
   background-image: url("../img/backs/strawberry.jpg");
 }
 .our_blog h2{
   width: 161px;
-  height: 14px;
 
   color: #323232;
   font-size: 16px;
@@ -207,7 +224,6 @@ html { box-sizing: border-box; }
 }
 .our_blog a {
   width: 279px;
-  height: 84px;
 
   font-size: 24px;
   font-weight: bold;
@@ -217,18 +233,14 @@ html { box-sizing: border-box; }
 
 .mailing {
   width: 560px;
-  height: 220px;
 
-  background-image: url("../img/backs/mailing.png");
+  background-image: url("../img/backs/mailing.svg");
   background-repeat: no-repeat;
 
   color: #5a5a5a;
 }
 .mailing form {
  width: 549px;
- height: 211px;
- margin-top: -78px;
-
 
  border-radius: 10px;
  background-color: #f8f7f4;
@@ -250,16 +262,7 @@ html { box-sizing: border-box; }
 .documents {
   list-style: none;
 }
-.social_networks_link {
-  width: 38px;
-  height: 38px;
-  opacity: 0.1;
-
-  border-radius: 50px;
-
-  background-color: #849d8f;
-  display: inline-block;
-}
+/* Ссылки на соцсети
 .twitter_link {
   background-image: url("../img/icons/twitter.svg");
   background-repeat: no-repeat;
@@ -276,6 +279,7 @@ html { box-sizing: border-box; }
   background-image: url("../img/icons/vk.svg");
   background-repeat: no-repeat;
 }
+*/
 .documents_links {
   font-size: 13px;
   line-height: 18px;
@@ -288,13 +292,44 @@ html { box-sizing: border-box; }
 .developer {
   width: 108px;
   height: 39px;
-
 }
 .developer a{
   font-size: 13px;
   line-height: 18px;
   color: #ffffff;
 }
+.current {
+  background-color: #d07058;
+}
+
+.creamy_container h1 {
+  color: #ffffff;
+  font-size: 35px;
+  line-height: 41px;
+}
+.breadcrumbs,
+.breadcrumbs a {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.product_name h3 {
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+/*.product_card:hover {
+  opacity: 0.2;
+  background-color: #f8f7f4;
+  color: #ffffff;
+} */
+.paginator a {
+  color: #ffffff;
+}
+.modal {
+  display: none;
+}
+
 .visually_hidden {
   position: absolute;
   width: 1px;
@@ -323,7 +358,7 @@ background-image: linear-gradient(to bottom, #e74a35, #f26843), linear-gradient(
 }
 .mailing_button {
   width: 129px;
-  height: 44px;
+
   border-radius: 20px;
 }
 .catalog_submenu {
