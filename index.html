@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="keywords" content="Gllacy магазин мороженого мороженое вкусности">
   <meta name="description" content="Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороденого собственного производства на развес">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Глейси</title>
@@ -13,9 +13,10 @@
 
 <body class="body_main">
   <h1 class="visually_hidden">Магазин мороженного Gllacy</h1>
-  <header class="main_header">
-    <nav>
+  <header class="main_header container">
+    <nav class="navigations">
       <a class="main_logo"> <img src="img/logo.svg" alt="Наш чудесный логотипчик"> </a>
+      <div class="not_logo_nav">
       <ul class="main_navigation">
         <li><a class="main_navigation_link" href="catalog.html">Каталог</a>
           <ul class="catalog_submenu">
@@ -62,8 +63,10 @@
          </li>
         <li><a href="basket.html" class="user_button basket_button">Пусто</a></li>
       </ul>
+    </div>
     </nav>
-    <p class="our_timetable"> <span class="work_hours">С 10 до 20, ежедневно</span>
+    <p class="our_timetable">
+      <span class="work_hours">С 10 до 20, ежедневно</span>
       <span class="phone_number">8 812 450-25-25</span>
     </p>
   </header>
@@ -143,12 +146,17 @@
     <section class="about_us">
       <h2>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороденого собственного производства на развес</h2>
       <div class="about_us_description">
+        <div class="description_column_1">
         <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
         <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья</p>
+        </div>
+        <div class="description_column_2"
         <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
         <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+        </div>
       </div>
     </section>
+    <div class="mailing_blog">
     <article class="our_blog">
       <h2>Новое в нашем блоге</h2>
       <a class="our_blog_articles" href="blog.html">10 способов свервировки фруктовых щербетов к столу</a>
@@ -162,6 +170,7 @@
         <button type="submit" class="button mailing_button">Отправить</button>
       </form>
     </section>
+  </div>
     <section class="our_location">
       <h2 class="visually_hidden">Наше местоположение</h2>
       <img src="img/backs/map.jpg" alt="Наш адрес: ул. Большая Конюшенная 19/8, Санкт-Петербург">
@@ -175,12 +184,12 @@
       </div>
     </section>
   </main>
-  <footer>
+  <footer class="container">
     <ul class="social_networks">
-      <li><a class="social_networks_link twitter_link" href="twitter.com/glaccy" aria-label="Страница магазина в Твиттере"></a></li>
-      <li><a class="social_networks_link insta_link" href="instagram.com/glaccy" aria-label="Страница магазина в Инстаграмме"></a></li>
-      <li><a class="social_networks_link facebook_link" href="facebook.com/glaccy" aria-label="Страница магазина в Фейсбуке"></a></li>
-      <li><a class="social_networks_link vk_link" href="vk.com/glaccy" aria-label="Страница магазина во Вконтакте"></a></li>
+      <li><a class="social_networks_link twitter_link" href="twitter.com/glaccy" aria-label="Страница магазина в Твиттере">twitter </a></li>
+      <li><a class="social_networks_link insta_link" href="instagram.com/glaccy" aria-label="Страница магазина в Инстаграмме">insta </a></li>
+      <li><a class="social_networks_link facebook_link" href="facebook.com/glaccy" aria-label="Страница магазина в Фейсбуке">facebook </a></li>
+      <li><a class="social_networks_link vk_link" href="vk.com/glaccy" aria-label="Страница магазина во Вконтакте"></a>vk</li>
     </ul>
     <ul class="documents">
       <li><a class="documents_links" href="for_providers.html">Для поставщиков</a></li>
