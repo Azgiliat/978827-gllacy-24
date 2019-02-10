@@ -253,6 +253,12 @@ html { box-sizing: border-box; }
 
   color: #5a5a5a;
 }
+.mailing_back {
+  width: 549px;
+  height: 211px;
+  border-radius: 10px;
+  background-color: #f8f7f4;
+}
 .mailing form {
  width: 549px;
 
