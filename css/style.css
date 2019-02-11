@@ -141,8 +141,6 @@ html { box-sizing: border-box; }
   font-weight: bold;
   line-height: 22px;
 
-  width: 560px;
-
   border-radius: 15px;
 }
 .stock h3 {
@@ -412,41 +410,38 @@ background-image: linear-gradient(to bottom, #e74a35, #f26843), linear-gradient(
 }
 /* Попытка сетки */
 .container {
-  width: 1146px;
+  width: 1200px;
   margin: 0 auto;
+  padding: 0px 27px;
+  border: solid blue 1px;
 }
 .main_header,
 .catalog_header {
-  min-width: 1280px;
   display: flex;
   min-height: 122px;
-  border: solid 2px red;
   flex-direction: column;
 
 }
 .navigations {
-  border: solid 2px green;
   display: flex;
-  min-width: 1019px;
+  justify-content: space-between;
 }
 .not_logo_nav {
-  border: solid 2px blue;
-  min-width: 995px;
+
   display: flex;
+  flex-basis: 100%;
   justify-content: space-between;
 }
 .main_navigation {
   display: flex;
-  border: solid 2px yellow;
   min-height: 73px;
-  min-width: 349px;
-  justify-content: space-around;
+  flex-basis: : 349px;
+  justify-content: space-between;
 }
 .user_navigation {
   display: flex;
-  border: solid 2px purple;
   min-height: 73px;
-  min-width: 262px;
+  flex-basis:: 262px;
 }
 .main_logo {
   margin-top: 9px;
@@ -462,13 +457,21 @@ background-image: linear-gradient(to bottom, #e74a35, #f26843), linear-gradient(
 .work_hours {
   display: block;
 }
-
-
+.stock {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-around;
+  border: solid red 1px;
+}
+.hits {
+  display: flex;
+  flex-basis: 100%;
+}
 .about_us {
   display: flex;
   flex-direction: column;
 
-  min-width: 1146px;
+  flex-basis: 100%;
   min-height: 306px;
 
   margin-bottom: 40px;
@@ -518,7 +521,7 @@ footer {
   display: flex;
   flex-direction: column;
 
-  min-width: 1280px;
+
   margin-top: -20px;
 }
 .some_more_nav h1 {
@@ -530,7 +533,7 @@ footer {
 }
 .products {
   display: flex;
-  min-width: 1280px;
+
 
   border: solid 2px yellow;
 
