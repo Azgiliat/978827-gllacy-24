@@ -566,8 +566,15 @@ background-image: linear-gradient(to bottom, #e74a35, #f26843), linear-gradient(
   display: flex;
   flex-wrap: wrap;
 }
-.about_us_description p {
+.about_us_description p:nth-child(2n+1) {
   width: 476px;
+
+  margin: 0px 0px 26px 0px;
+
+  padding-left: 76px;
+}
+.about_us_description p:nth-child(2n) {
+  width: 470px;
 
   margin: 0px 0px 26px 0px;
 
