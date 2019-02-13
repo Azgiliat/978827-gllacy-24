@@ -548,6 +548,7 @@ background-image: linear-gradient(to bottom, #e74a35, #f26843), linear-gradient(
 .hits {
   display: flex;
   flex-basis: 100%;
+  justify-content: space-between;
 }
 .about_us {
   display: flex;
@@ -563,18 +564,15 @@ background-image: linear-gradient(to bottom, #e74a35, #f26843), linear-gradient(
 }
 .about_us_description {
   display: flex;
+  flex-wrap: wrap;
 }
-.description_column_1 {
-  padding-top: 0px;
-  margin-left: 76px;
-  margin-right: 91px;
-  min-width: 476px;
-}
-.description_column_2 {
-  padding-top: 0px;
-  min-width: 470px;
-}
+.about_us_description p {
+  width: 476px;
 
+  margin: 0px 0px 26px 0px;
+
+  padding-left: 76px;
+}
 .mailing_blog {
   display: flex;
   justify-content: space-between;
@@ -584,6 +582,10 @@ background-image: linear-gradient(to bottom, #e74a35, #f26843), linear-gradient(
 .our_blog,
 .mailing {
   min-height: 220px;
+}
+
+.our_location img {
+  margin-left: -27px;
 }
 footer {
   display: flex;
