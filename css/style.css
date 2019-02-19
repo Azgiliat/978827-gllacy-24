@@ -43,15 +43,11 @@ html { box-sizing: border-box; }
 }
 .main_navigation a:hover {
   box-sizing: border-box;
-  font-size: 16px;
-  line-height: 18px;
   font-weight: bold;
-
 
   border-radius: 30px;
   background-color: #f7f6f3;
   color: #333333;
-  margin: 0px;
 }
 .main_navigation a:active {
   box-shadow: inset 0px 2px 1px 0 #696969;
@@ -356,9 +352,9 @@ form input[type="email"]{
   width: 38px;
   height: 38px;
   background-image: url("../img/icons/twitter.svg");
-  background-color: rgba(255, 255, 255, 0.5);
+  border: solid rgba(255, 255, 255, 0.5) 2px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0px center;
   border-radius: 50%;
 }
 .insta_link {
@@ -366,7 +362,7 @@ form input[type="email"]{
   width: 38px;
   height: 38px;
   background-image: url("../img/icons/insta.svg");
-  background-color: rgba(255, 255, 255, 0.5);
+  border: solid rgba(255, 255, 255, 0.5) 2px;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
@@ -376,7 +372,7 @@ form input[type="email"]{
   width: 38px;
   height: 38px;
   background-image: url("../img/icons/facebook.svg");
-  background-color: rgba(255, 255, 255, 0.5);
+  border: solid rgba(255, 255, 255, 0.5) 2px;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
@@ -386,7 +382,7 @@ form input[type="email"]{
   width: 38px;
   height: 38px;
   background-image: url("../img/icons/vk.svg");
-  background-color: rgba(255, 255, 255, 0.5);
+  border: solid rgba(255, 255, 255, 0.5) 2px;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
@@ -434,10 +430,6 @@ form input[type="email"]{
   line-height: 18px;
   color: #ffffff;
 }
-.current {
-  background-color: #d07058;
-}
-
 .creamy_container h1 {
   color: #ffffff;
   font-size: 35px;
@@ -464,8 +456,22 @@ form input[type="email"]{
 }
 .modal {
   display: none;
-}
 
+  border-radius: 5.1px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  background-color: #f8f7f4;
+}
+input[type="text"] {
+  border-radius: 5px;
+  background-color: #ffffff;
+
+  color: #999999;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 16px;
+
+  border: solid 1px #999999;
+}
 .visually_hidden {
   position: absolute;
   width: 1px;
@@ -503,8 +509,7 @@ background-image: linear-gradient(to bottom, #e74a35, #f26843), linear-gradient(
 
   width: 143px;
   height: 171px;
-  padding-right: 21px;
-  padding-left: 20px;
+  padding: 0px;
 
   position: absolute;
   top: 60px;
@@ -513,37 +518,207 @@ background-image: linear-gradient(to bottom, #e74a35, #f26843), linear-gradient(
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
 }
-.catalog_submenu li {
+
+.catalog_submenu li:hover {
+  background-color: #fbded8;
+}
+
+.catalog_submenu a {
+  display: block;
   height: 28px;
   margin-bottom: 4px;
-  background-color: rgba(255, 0, 0, 0.1);
-}
-.catalog_submenu li:first-of-type {
-  height: 38px;
-  padding-top: 10px;
-  background-color: rgba(255, 0, 0, 0.5);
-}
-.catalog_submenu a {
+  padding-left: 20px;
+  padding-top: 4px;
+
   color: #323232;
   font-size: 14px;
   line-height: 16px;
   font-weight: normal;
 }
+.catalog_submenu li:first-of-type a{
+  display: block;
+  height: 38px;
+  padding-top: 10px;
+  font-weight: bold;
+}
+.catalog_submenu a:hover {
+border-radius: 0px;
+background-color: #fbded7;
+color: #323232;
+font-weight: normal;
+}
+.catalog_submenu a:active {
+border-radius: 0px;
+background-color: #f6b5a5;
+color: #323232;
+font-weight: normal;
+}
 .catalog_submenu+li+.catalog_submenu_link{
   font-weight: bold;
 }
 .main_navigation_link:hover+.catalog_submenu,
- .main_navigation_link:focus+.catalog_submenu{
+.main_navigation_link:focus+.catalog_submenu{
   display: block;
 
 }
-:not(header) a {
+.login_button:hover + .login_form {
+  display: block;
+
+}
+.login_form {
+  padding-left: 19px;
+  padding-top: 20px;
+
+  width: 277px;
+  height: 214px;
+  border-radius: 5.1px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  background-color: #f8f7f4;
+
+  position: absolute;
+  right: 140px;
+  top: 59px;
+}
+.login_form input[type="text"],
+.login_form input[type="password"] {
+  width: 241px;
+  height: 44px;
+  border-radius: 5px;
+  background-color: #ffffff;
+
+  color: #999999;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 16px;
+}
+.login_form .button {
+  display: inline-block;
+  width: 100px;
+  height: 44px;
+  margin-right: 10px;
+
+  font-size: 18px;
+  line-height: 24px;
+
+  border-radius: 30px;
+  border: none;
+  vertical-align: top;
+}
+.login_links {
+  display: inline-block;
+  width: 125px;
+  height: 44px;
+}
+.login_form a {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 24px;
+  color: #323232;
+}
+.search_form {
+  width: 341px;
+  height: 84px;
+
+  padding: 20px 15px;
+
+  position: absolute;
+  top: 60px;
+  right: 240px;
+}
+.search_form input[type="text"] {
+  width: 311px;
+  height: 44px;
+}
+.search_form button {
+  display: none;
+}
+.search_button:hover + .search_form {
+  display: block;
+}
+.feedback_form {
+  display: block;
+  width: 478px;
+  border-radius: 10px;
+
+  padding-left: 24px;
+  padding-top: 20px;
+
+  position: fixed;
+  top: 337px;
+  left: 50%;
+  margin-left: -239px;
+}
+.feedback_form span {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+}
+.feedback_form input[type="text"],
+.feedback_form input[type="email"] {
+  width: 267px;
+  height: 44px;
+
+  border: solid 1px #999999;
+
+  font-size: 16px;
+  line-height: 24px;
+}
+.feedback_form textarea {
+  width: 428px;
+  height: 155px;
+  background-color: #ffffff;
+
+  padding-top: 13px;
+  padding-left: 15px;
+
+  margin-bottom: 25px;
+}
+.feedback_form button {
+  width: 139px;
+  height: 44px;
+  border: none;
+  border-radius: 30px;
+  margin-left: 290px;
+  margin-bottom: 27px;
+}
+.feedback_form .close_from {
+  width: 18px;
+  height: 18px;
+
+  font-size: 0px;
+  border: 0;
+  background-color: #f8f7f4;
+
+  position: absolute;
+  top: 20px;
+  right: 15px;
+}
+.close_from::after,
+.close_from::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 25px;
+  background-color: #323232;
+
+  right: -5px;
+}
+.close_from::after {
+  transform: rotate(45deg);
+}
+.close_from::before {
+  transform: rotate(-45deg);
+}
+main a,
+footer a {
   color: #ffffff;
 }
-:not(header) a:hover {
+main a:hover,
+footer a:hover {
   color: #ffbc9e;
 }
-:not(header) a:active {
+main a:active,
+footer a:active {
   color: #ffbc9e;
 }
 .blog a {
@@ -555,6 +730,8 @@ background-image: linear-gradient(to bottom, #e74a35, #f26843), linear-gradient(
 .blog a:active {
   color: #e84d37;
 }
+
+
 /* Попытка сетки */
 .container {
   width: 1200px;
@@ -563,10 +740,8 @@ background-image: linear-gradient(to bottom, #e74a35, #f26843), linear-gradient(
 }
 .main_header,
 .catalog_header {
-  display: flex;
   max-height: 113px;
-  flex-direction: column;
-  justify-content: flex-start;
+
   position: relative;
 }
 .navigations {
@@ -708,8 +883,7 @@ background-image: linear-gradient(to bottom, #e74a35, #f26843), linear-gradient(
   justify-content: space-between;
 }
 .about_us {
-  display: flex;
-  flex-direction: column;
+  display: block;
 
   flex-basis: 100%;
   min-height: 306px;
@@ -720,8 +894,55 @@ background-image: linear-gradient(to bottom, #e74a35, #f26843), linear-gradient(
   margin: 29px 112px 10px 21px;
 }
 .about_us_description {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
+  vertical-align: text-top;
+
+  position: relative;
+}
+.about_us_description p {
+  display: inline-block;
+  vertical-align: inherit;
+  position: relative;
+}
+.about_us_description p:nth-child(1)::before{
+    content: "";
+    background-image: url("../img/icons/ice_cream.svg");
+    height: 49px;
+    width: 49px;
+
+    position: absolute;
+    top: 5px;
+    left: 20px;
+}
+.about_us_description p:nth-child(2)::before{
+    content: "";
+    background-image: url("../img/icons/cow.svg");
+    height: 49px;
+    width: 49px;
+
+    position: absolute;
+    top: 5px;
+    left: 20px;
+}
+.about_us_description p:nth-child(3)::before{
+    content: "";
+    background-image: url("../img/icons/leaf.svg");
+    height: 49px;
+    width: 49px;
+
+    position: absolute;
+    top: 5px;
+    left: 20px;
+}
+.about_us_description p:nth-child(4)::before{
+    content: "";
+    background-image: url("../img/icons/thermometr.svg");
+    height: 49px;
+    width: 49px;
+
+    position: absolute;
+    top: 5px;
+    left: 20px;
 }
 .about_us_description p:nth-child(2n+1) {
   width: 564px;
@@ -831,4 +1052,9 @@ footer {
 }
 .product_card .product_name {
   order: 2;
+}
+.current,
+.catalog_submenu .current {
+  background-color: #d07058;
+  color: #ffffff;
 }

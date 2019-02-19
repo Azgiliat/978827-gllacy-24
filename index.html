@@ -22,7 +22,7 @@
           <ul class="catalog_submenu">
             <li><a href="new.html" class="catalog_submenu_link">Новинки</a></li>
             <li><a href="creamy.html" class="catalog_submenu_link">Сливочное</a></li>
-            <li><a href="#" class="catalog_submenu_link">Щербеты</a></li>
+            <li><a href="#" class="catalog_submenu_link current">Щербеты</a></li>
             <li><a href="#" class="catalog_submenu_link">Фруктовый лед</a></li>
             <li><a href="#" class="catalog_submenu_link">Мелорин</a></li>
           </ul>
@@ -42,7 +42,7 @@
             <form action="https://echo.htmlacademy.ru" method="post">
               <label class="visually_hidden" for="search_field">Форма поиска</label>
               <input type="text" name="search" id="search_field" placeholder="Что ищем?">
-              <button type="submit">Найти</button>
+              <button type="submit" class="visually_hidden">Найти</button>
             </form>
           </section>
         </li>
@@ -72,9 +72,12 @@
               <input type="password" name="password" id="password_field" placeholder="Пароль">
             </p>
             <button type="submit" class="button">Войти</button>
-            </form>
+            <div class="login_links">
             <a href="forget_password.html" class="login_link">Забыли пароль?</a>
             <a href="new_user.html" class="login_link">Новая регистрация</a>
+          </div>
+            </form>
+
           </section>
          </li>
         <li><a href="basket.html" class="user_button basket_button">Пусто</a></li>
@@ -217,6 +220,7 @@
   </footer>
   <section class="modal feedback_form">
     <h2 class="visually_hidden">Форма обратной связи</h2>
+    <span>Мы обязательно вам ответим!</span>
     <form action="https://echo.htmlacademy.ru" method="post">
       <p>
       <label class="visually_hidden" for="name_field">Ваше имя</label>
