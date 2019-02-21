@@ -194,7 +194,7 @@ html { box-sizing: border-box; }
   border-radius: 30px;
 }
 
-.hits a {
+.product_name {
   font-size: 16px;
   line-height: 22px;
   color:#ffffff;
@@ -1086,9 +1086,10 @@ footer {
   max-width: 267px;
   position: relative;
   margin-left: 26px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
-.product_card:hover .product_card_hover {
+.product_card:hover .product_card_hover,
+ .product_card:hover .quick_look{
   display: block;
 }
 .product_card_hover {
@@ -1098,13 +1099,16 @@ footer {
   top: -6px;
 
   width: 293px;
-  height: 405px;
+  height: calc(100% + 83px);
   background-color: rgba(248, 247, 244, 0.2);
 
   z-index: 1;
 }
-.product_card_hover a {
-  display: inline-block;
+.quick_look {
+  display: none;
+  position: absolute;
+  top: 339px;
+  left: 36px;
 
   width: 200px;
   height: 44px;
@@ -1115,7 +1119,7 @@ footer {
   font-size: 18px;
   line-height: 24px;
 
-  margin: 339px 46px 22px 47px;
+  z-index: 4;
 }
 .hit_img {
   position: absolute;
