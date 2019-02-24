@@ -9,12 +9,6 @@ body {
   font-weight: normal;
   color: #323232;
   text-transform: none;
-
-  background-color: #849d8f;
-
-  background-image: url("../img/backs/slider_1.png");
-  background-position: center top;
-  background-repeat: no-repeat;
 }
 
 .body_creamy {
@@ -28,6 +22,93 @@ a {
 html { box-sizing: border-box; }
 *, *::before, *::after { box-sizing: inherit; }
 
+.site_wrapper {
+  width: 100%;
+  background-color: #849d8f;
+
+  background-image: url("../img/backs/slider_1.png");
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.slider_navigation label {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+
+  vertical-align: top;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+
+.slider {
+  padding: 0px;
+  width: 100%;
+  margin-bottom: 41px;
+  margin-top: 284px;
+
+  position: relative;
+  text-align: center;
+}
+.slider_element {
+  display: none;
+}
+.slider_element_1 {
+  display: block;
+}
+.slider_navigation {
+  position: absolute;
+
+  font-size: 0px;
+
+  left: 0px;
+  bottom: 50px;
+
+  z-index: 50;
+}
+
+.slider_element .slider_button {
+  display:block;
+  box-sizing: border-box;
+  width: 280px;
+  height: 66px;
+
+  margin: 0px auto;
+  padding-top: 12px;
+  border-radius: 30px;
+
+  font-size: 31px;
+  line-height: 44px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#product_1:checked ~ .site_wrapper {
+  background-color: #849d8f;
+}
+
+#product_2:checked ~ .site_wrapper {
+  background-color: #8996a6;
+}
+
+#product_3:checked ~ .site_wrapper {
+  background-color: #9d8b84;
+}
+#product_1:checked ~ .site_wrapper #slide_1,
+#product_2:checked ~ .site_wrapper #slide_2,
+#product_3:checked ~ .site_wrapper #slide_3 {
+  display: block;
+}
+#product_1:checked ~ .site_wrapper label[for="product_1"],
+#product_2:checked ~ .site_wrapper label[for="product_2"],
+#product_3:checked ~ .site_wrapper label[for="product_3"] {
+  background-color: #ffffff;
+}
 
 .main_navigation,
 .user_navigation,
@@ -133,21 +214,19 @@ html { box-sizing: border-box; }
   font-size: 22px;
   line-height: 24px;
 }
-
-.slider {
-
-}
 .slider ul {
   list-style: none;
 }
 .slider_elements_headline {
   display: block;
   width: 670px;
-  height: 116px;
+
   font-size: 60px;
   line-height: 60.5px;
   font-weight: bold;
   color: #ffffff;
+
+  margin: 0px auto;
 }
 .stock {
   color: #ffffff;
@@ -486,7 +565,6 @@ form input[type="email"]{
 .paginator {
   height: 30px;
   text-align: right;
-  padding-left: auto;
 }
 .paginator a {
   display: inline-block;
@@ -504,7 +582,7 @@ form input[type="email"]{
   text-align: center;
 }
 .paginator a:hover {
-  background-color: rgba(255, 255, 255, 0,2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .modal {
   display: none;
@@ -519,7 +597,7 @@ input[type="search"] {
   background-color: #ffffff;
 
   color: #999999;
-  font-size: 14px;fe
+  font-size: 14px;
   line-height: 24px;
   padding: 16px;
 
@@ -691,7 +769,7 @@ font-weight: normal;
   display: block;
 }
 .feedback_form {
-  display: block;
+  display: none;
   width: 478px;
   border-radius: 10px;
 
@@ -859,59 +937,6 @@ footer a:active {
   display: block;
 }
 
-
-.slider {
-  display: flex;
-  padding: 0px;
-  width: 100%;
-  margin-top: 284px;
-  margin-bottom: 41px;
-}
-.slider_elements {
-  padding: 0px;
-  display: flex;
-  flex-wrap: wrap;
-  order: 2;
-
-}
-.slider_element_2,
-.slider_element_3 {
-  display: none;
-}
-.slider_navigation .slider_button {
-  width: 21px;
-  height: 21px;
-  border-radius: 50px;
-
-  margin-right: 8px;
-  margin-bottom: 16px;
-}
-.slider_element .slider_button {
-  display:block;
-  box-sizing: border-box;
-  width: 280px;
-  height: 66px;
-
-  margin: 0px auto;
-  padding-top: 12px;
-  border-radius: 30px;
-
-  font-size: 31px;
-  line-height: 44px;
-  text-align: center;
-  font-weight: bold;
-}
-.slider_navigation {
-  padding: 0px;
-    display: flex;
-    flex-wrap: wrap;
-    order: 1;
-
-    justify-content: flex-start;
-    align-items: flex-end;
-
-    margin-right: 154px;
-}
 
 .stock {
   display: flex;
