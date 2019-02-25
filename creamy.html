@@ -17,7 +17,7 @@
       <a class="main_logo" href="index.html"> <img src="img/logo.svg" width="154" height="64" alt="Наш чудесный логотипчик"> </a>
       <div class="not_logo_nav">
         <ul class="main_navigation">
-          <li><a class="main_navigation_link current" href="catalog.html">Каталог</a>
+          <li class="main_navigation_element"><a class="main_navigation_link current" href="catalog.html">Каталог</a>
             <ul class="catalog_submenu">
               <li><a href="new.html" class="catalog_submenu_link">Новинки</a></li>
               <li><a href="creamy.html" class="catalog_submenu_link current">Сливочное</a></li>
@@ -26,8 +26,8 @@
               <li><a href="#" class="catalog_submenu_link">Мелорин</a></li>
             </ul>
           </li>
-          <li><a class="main_navigation_link" href="delivey_and_payment.html">Доставка и оплата</a></li>
-          <li><a class="main_navigation_link" href="about_company.html">О Компании</a></li>
+          <li class="main_navigation_element"><a class="main_navigation_link" href="delivey_and_payment.html">Доставка и оплата</a></li>
+          <li class="main_navigation_element"><a class="main_navigation_link" href="about_company.html">О Компании</a></li>
         </ul>
         <ul class="user_navigation">
           <li>
@@ -80,7 +80,7 @@
           </li>
           <li>
             <a href="basket.html" class="user_button full_basket">2 товара</a>
-            <section class="modal basket">
+            <section class="modal_basket">
               <h2 class="visually_hidden">Ваша корзина</h2>
               <table class="products_in_basket">
                 <tr>
@@ -108,7 +108,7 @@
                   <td>
                     <img class="little_ice_cream" src="img/ice_cream_photos/creamy_strawberry.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада">
                   </td>
-                  <td>
+                  <td class="cell_1">
                     <a class="basket_product" href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
                   </td>
                   <td>
@@ -121,7 +121,7 @@
                 </tr>
               </table>
               <span class="total_cost">Итого: 750 руб.</span>
-              <a class="button" href="order_page.html" aria-label="Страница оформления заказа">Оформить заказ</a>
+              <a class="button order_button" href="order_page.html" aria-label="Страница оформления заказа">Оформить заказ</a>
             </section>
           </li>
         </ul>
