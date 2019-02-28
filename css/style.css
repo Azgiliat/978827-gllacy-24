@@ -9,6 +9,8 @@ body {
   font-weight: normal;
   color: #323232;
   text-transform: none;
+
+  min-width: 1200px;
 }
 
 .body_creamy {
@@ -31,8 +33,8 @@ html { box-sizing: border-box; }
 }
 .slider_navigation label {
   display: inline-block;
-  width: 17px;
-  height: 17px;
+  width: 20px;
+  height: 20px;
   margin-right: 8px;
 
   vertical-align: top;
@@ -56,6 +58,7 @@ html { box-sizing: border-box; }
 }
 .slider_element {
   display: none;
+  margin-left: -30px;
 }
 
 .slider_navigation {
@@ -64,7 +67,7 @@ html { box-sizing: border-box; }
   font-size: 0px;
 
   left: 0px;
-  bottom: 50px;
+  bottom: 0px;
 
   z-index: 50;
 }
@@ -75,7 +78,7 @@ html { box-sizing: border-box; }
   width: 280px;
   height: 66px;
 
-  margin: 0px auto;
+  margin: 15px auto 0px auto;
   padding-top: 12px;
   border-radius: 30px;
 
@@ -457,6 +460,19 @@ form input[type="email"]{
   list-style: none;
   display: flex;
 }
+.documents li:first-child {
+  position: relative;
+}
+.documents li:first-child::before {
+  content: "";
+  width: 15px;
+  height: 13px;
+  background-image: url("../img/icons/heart.svg");
+
+  position: absolute;
+  top: 6px;
+  left: -20px;
+}
 /* Ссылки на соцсети*/
 .social_networks {
   padding: 0px;
@@ -724,17 +740,10 @@ font-weight: normal;
 .main_navigation li:first-child:focus .catalog_submenu{
   display: block;
 }
-.main_navigation_link::after:hover+.catalog_submenu,
-.main_navigation_link::after:focus+.catalog_submenu{
+.user_navigation li:nth-child(2):hover .login_form {
   display: block;
-}
-.main_navigation_link:hover
-.login_button:hover + .login_form {
-  display: block;
-
 }
 .login_form {
-  display: none;
   padding-left: 19px;
   padding-top: 20px;
 
@@ -978,7 +987,7 @@ footer a:active {
   position: absolute;
   top: 32px;
   right: 0px;
-  height: 10px;
+  height: 20px;
 }
 .user_button {
   height: 33px;
@@ -1029,13 +1038,15 @@ footer a:active {
   flex-basis: 100%;
   justify-content: space-between;
 }
+.hits .product_card {
+  margin-bottom: 0px;
+}
 .about_us {
   display: block;
-
-  flex-basis: 100%;
   min-height: 306px;
 
   margin-bottom: 40px;
+  margin-top: 0px;
 }
 .about_us h2 {
   margin: 29px 112px 10px 21px;
@@ -1176,7 +1187,6 @@ td {
   padding-bottom: 20px;
 }
 .products_in_basket {
-  align: center;
   vertical-align: center;
 }
 .products_in_basket::after {
@@ -1324,7 +1334,6 @@ td:nth-child(4) {
   position: absolute;
   top: 7px;
   right: 0px;
-}{
   background-color: #ffffff;
   color: #323232;
 }
@@ -1469,7 +1478,7 @@ td:nth-child(4) {
   flex-direction: column;
   max-width: 267px;
   position: relative;
-  margin-left: 26px;
+  margin-left: 10px;
   margin-bottom: 35px;
 }
 .product_card:hover .product_card_hover,
