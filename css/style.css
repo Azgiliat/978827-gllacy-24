@@ -668,6 +668,7 @@ body {
      position: absolute;
      right: 0px;
      top: 37px;
+     z-index: 5;
 }
  .login_form input[type="text"], .login_form input[type="password"] {
      width: 241px;
@@ -1363,4 +1364,3 @@ body {
      background-color: #d07058;
      color: #ffffff;
 }
- 
