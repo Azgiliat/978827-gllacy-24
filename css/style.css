@@ -328,8 +328,8 @@ body {
      color:#ffffff;
 }
  .product_name:hover h3 {
-   color: #ffbc9e;
- }
+     color: #ffbc9e;
+}
  .about_us {
      border-radius: 15px;
      background-image: url("../img/backs/wafer_back.jpg");
@@ -642,7 +642,7 @@ body {
  .breadcrumbs > *:not(:last-child)::after {
      content: "»";
      margin: 0px 5px 0px 6px;
-    ;
+     ;
      font-size: 16px;
 }
  .product_name h3 {
@@ -802,8 +802,8 @@ body {
      line-height: 16px;
      font-weight: normal;
 }
-.catalog_submenu li:hover .catalog_submenu_link {
-  color: #e84d37;
+ .catalog_submenu li:hover .catalog_submenu_link {
+     color: #e84d37;
 }
  .catalog_submenu li:first-of-type .catalog_submenu_link{
      display: block;
@@ -866,9 +866,21 @@ body {
      border: solid 1px #d3d3d2;
      font-weight: bold;
 }
-.login_form input[type="text"]::placeholder, .login_form input[type="password"]::placeholder {
-  font-weight: normal;
-  color: #999999;
+ .login_form input[type="text"]::-webkit-input-placeholder, .login_form input[type="password"]::-webkit-input-placeholder {
+     font-weight: normal;
+     color: #999999;
+}
+ .login_form input[type="text"]:-ms-input-placeholder, .login_form input[type="password"]:-ms-input-placeholder {
+     font-weight: normal;
+     color: #999999;
+}
+ .login_form input[type="text"]::-ms-input-placeholder, .login_form input[type="password"]::-ms-input-placeholder {
+     font-weight: normal;
+     color: #999999;
+}
+ .login_form input[type="text"]::placeholder, .login_form input[type="password"]::placeholder {
+     font-weight: normal;
+     color: #999999;
 }
  .login_form .button {
      display: inline-block;
@@ -914,7 +926,19 @@ body {
      font-weight: bold;
      color: #323232;
 }
-.search_form input[type="search"]::placeholder {
+ .search_form input[type="search"]::-webkit-input-placeholder {
+     font-weight: normal;
+     color: #999999;
+}
+ .search_form input[type="search"]:-ms-input-placeholder {
+     font-weight: normal;
+     color: #999999;
+}
+ .search_form input[type="search"]::-ms-input-placeholder {
+     font-weight: normal;
+     color: #999999;
+}
+ .search_form input[type="search"]::placeholder {
      font-weight: normal;
      color: #999999;
 }
@@ -960,9 +984,21 @@ body {
      padding-top: 16px;
      padding-bottom: 12px;
 }
-.feedback_form input[type="text"]::placeholder, .feedback_form input[type="email"]::placeholder {
-  font-weight: normal;
-  color: #999999;
+ .feedback_form input[type="text"]::-webkit-input-placeholder, .feedback_form input[type="email"]::-webkit-input-placeholder {
+     font-weight: normal;
+     color: #999999;
+}
+ .feedback_form input[type="text"]:-ms-input-placeholder, .feedback_form input[type="email"]:-ms-input-placeholder {
+     font-weight: normal;
+     color: #999999;
+}
+ .feedback_form input[type="text"]::-ms-input-placeholder, .feedback_form input[type="email"]::-ms-input-placeholder {
+     font-weight: normal;
+     color: #999999;
+}
+ .feedback_form input[type="text"]::placeholder, .feedback_form input[type="email"]::placeholder {
+     font-weight: normal;
+     color: #999999;
 }
  .feedback_form textarea {
      width: 428px;
@@ -976,9 +1012,21 @@ body {
      font-weight: bold;
      color: #323232;
 }
-.feedback_form textarea::placeholder {
-  font-weight: normal;
-  color: #999999;
+ .feedback_form textarea::-webkit-input-placeholder {
+     font-weight: normal;
+     color: #999999;
+}
+ .feedback_form textarea:-ms-input-placeholder {
+     font-weight: normal;
+     color: #999999;
+}
+ .feedback_form textarea::-ms-input-placeholder {
+     font-weight: normal;
+     color: #999999;
+}
+ .feedback_form textarea::placeholder {
+     font-weight: normal;
+     color: #999999;
 }
  .feedback_form button {
      width: 139px;
@@ -1775,3 +1823,4 @@ body {
      background-color: rgba(32, 32, 32, 0.5);
      z-index: 9;
 }
+ 
