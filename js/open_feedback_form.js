@@ -2,7 +2,8 @@
     var open_button = document.querySelector(".map_button");
     var close_button = document.querySelector(".feedback_form .close_form");
     var overlay = document.querySelector(".overlay");
-      open_button.addEventListener("click", function() {
+      open_button.addEventListener("click", function(evt) {
+        evt.preventDefault();
         popup.classList.add("modal_show");
         popup.classList.remove("modal_hidden");
         overlay.classList.remove("modal_hidden");

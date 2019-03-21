@@ -120,6 +120,7 @@ body {
 }
  .main_navigation_link span {
      display: inline-block;
+     vertical-align: middle;
      width: 100%;
      padding: 1px;
      position: relative;
@@ -393,6 +394,7 @@ body {
      width: 1200px;
      margin: 0 auto;
 }
+/*
  .our_location::after {
      content: "";
      background-image: url("../img/icons/pin.svg");
@@ -410,7 +412,7 @@ body {
      position: absolute;
      top: 171px;
      left: 302px;
-}
+} Pin for img map  */
  .our_location_description {
      width: 302px;
      height: 305px;
@@ -948,8 +950,34 @@ body {
  li:hover .search_form {
      display: block;
 }
+@-webkit-keyframes visibility {
+  0% {-webkit-transform: scale(0, 0);transform: scale(0, 0);}
+  30% {-webkit-transform: scale(0.3, 0.3);transform: scale(0.3, 0.3);}
+  40% {-webkit-transform: scale(0.4, 0.4);transform: scale(0.4, 0.4);}
+  50% {-webkit-transform: scale(0.5, 0.5);transform: scale(0.5, 0.5);}
+  60% {-webkit-transform: scale(0.6, 0.6);transform: scale(0.6, 0.6);}
+  70% {-webkit-transform: scale(0.7, 0.7);transform: scale(0.7, 0.7);}
+  80% {-webkit-transform: scale(0.8, 0.8);transform: scale(0.8, 0.8);}
+  90% {-webkit-transform: scale(0.9, 0.9);transform: scale(0.9, 0.9);}
+  100% {-webkit-transform: scale(1, 1);transform: scale(1, 1);}
+}
+@keyframes visibility {
+  0% {-webkit-transform: scale(0, 0);transform: scale(0, 0);}
+  30% {-webkit-transform: scale(0.3, 0.3);transform: scale(0.3, 0.3);}
+  40% {-webkit-transform: scale(0.4, 0.4);transform: scale(0.4, 0.4);}
+  50% {-webkit-transform: scale(0.5, 0.5);transform: scale(0.5, 0.5);}
+  60% {-webkit-transform: scale(0.6, 0.6);transform: scale(0.6, 0.6);}
+  70% {-webkit-transform: scale(0.7, 0.7);transform: scale(0.7, 0.7);}
+  80% {-webkit-transform: scale(0.8, 0.8);transform: scale(0.8, 0.8);}
+  90% {-webkit-transform: scale(0.9, 0.9);transform: scale(0.9, 0.9);}
+  100% {-webkit-transform: scale(1, 1);transform: scale(1, 1);}
+}
  .modal_show {
      display: block;
+     -webkit-animation-name: visibility;
+             animation-name: visibility;
+     -webkit-animation-duration: 0.2s;
+             animation-duration: 0.2s;
 }
  .modal_hidden {
      display: none;
@@ -1238,7 +1266,7 @@ body {
 }
  .about_us_description p {
      display: inline-block;
-     vertical-align: inherit;
+     vertical-align: middle;
      position: relative;
 }
  .about_us_description p:nth-child(1)::before{
@@ -1592,10 +1620,12 @@ body {
 }
  .fat_filter label:nth-child(2) {
      display: inline-block;
+     vertical-align: middle;
      min-width: 80px;
 }
  .fat_filter label:nth-child(3) {
      display: inline-block;
+     vertical-align: middle;
      min-width: 88px;
 }
  .fat_text {
@@ -1823,4 +1853,3 @@ body {
      background-color: rgba(32, 32, 32, 0.5);
      z-index: 9;
 }
- 
