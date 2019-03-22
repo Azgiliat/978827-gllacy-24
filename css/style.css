@@ -282,11 +282,13 @@ body {
      background-image: url("../img/backs/raspberries.jpg");
      background-repeat: no-repeat;
      border-radius: 15px;
+     background-color: rgb(181, 1, 32);
 }
  .stock_element_2 {
      background-image: url("../img/backs/chocolate.jpg");
      background-repeat: no-repeat;
      border-radius: 15px;
+     background-color: rgb(84, 44, 25);
 }
  .stock_element_1 .stock_button {
      font-size: 18px;
@@ -335,6 +337,7 @@ body {
      border-radius: 15px;
      background-image: url("../img/backs/wafer_back.jpg");
      background-repeat: repeat;
+     background-color: rgb(235, 244, 196);
      color:#323232;
      font-size: 16px;
      line-height: 22px;
@@ -394,8 +397,7 @@ body {
      width: 1200px;
      margin: 0 auto;
 }
-/*
- .our_location::after {
+/* .our_location::after {
      content: "";
      background-image: url("../img/icons/pin.svg");
      width: 80px;
@@ -412,7 +414,8 @@ body {
      position: absolute;
      top: 171px;
      left: 302px;
-} Pin for img map  */
+}
+ Pin for img map */
  .our_location_description {
      width: 302px;
      height: 305px;
@@ -950,34 +953,88 @@ body {
  li:hover .search_form {
      display: block;
 }
-@-webkit-keyframes visibility {
-  0% {-webkit-transform: scale(0, 0);transform: scale(0, 0);}
-  30% {-webkit-transform: scale(0.3, 0.3);transform: scale(0.3, 0.3);}
-  40% {-webkit-transform: scale(0.4, 0.4);transform: scale(0.4, 0.4);}
-  50% {-webkit-transform: scale(0.5, 0.5);transform: scale(0.5, 0.5);}
-  60% {-webkit-transform: scale(0.6, 0.6);transform: scale(0.6, 0.6);}
-  70% {-webkit-transform: scale(0.7, 0.7);transform: scale(0.7, 0.7);}
-  80% {-webkit-transform: scale(0.8, 0.8);transform: scale(0.8, 0.8);}
-  90% {-webkit-transform: scale(0.9, 0.9);transform: scale(0.9, 0.9);}
-  100% {-webkit-transform: scale(1, 1);transform: scale(1, 1);}
+ @-webkit-keyframes visibility {
+     0% {
+        -webkit-transform: scale(0, 0);
+        transform: scale(0, 0);
+    }
+     30% {
+        -webkit-transform: scale(0.3, 0.3);
+        transform: scale(0.3, 0.3);
+    }
+     40% {
+        -webkit-transform: scale(0.4, 0.4);
+        transform: scale(0.4, 0.4);
+    }
+     50% {
+        -webkit-transform: scale(0.5, 0.5);
+        transform: scale(0.5, 0.5);
+    }
+     60% {
+        -webkit-transform: scale(0.6, 0.6);
+        transform: scale(0.6, 0.6);
+    }
+     70% {
+        -webkit-transform: scale(0.7, 0.7);
+        transform: scale(0.7, 0.7);
+    }
+     80% {
+        -webkit-transform: scale(0.8, 0.8);
+        transform: scale(0.8, 0.8);
+    }
+     90% {
+        -webkit-transform: scale(0.9, 0.9);
+        transform: scale(0.9, 0.9);
+    }
+     100% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
 }
-@keyframes visibility {
-  0% {-webkit-transform: scale(0, 0);transform: scale(0, 0);}
-  30% {-webkit-transform: scale(0.3, 0.3);transform: scale(0.3, 0.3);}
-  40% {-webkit-transform: scale(0.4, 0.4);transform: scale(0.4, 0.4);}
-  50% {-webkit-transform: scale(0.5, 0.5);transform: scale(0.5, 0.5);}
-  60% {-webkit-transform: scale(0.6, 0.6);transform: scale(0.6, 0.6);}
-  70% {-webkit-transform: scale(0.7, 0.7);transform: scale(0.7, 0.7);}
-  80% {-webkit-transform: scale(0.8, 0.8);transform: scale(0.8, 0.8);}
-  90% {-webkit-transform: scale(0.9, 0.9);transform: scale(0.9, 0.9);}
-  100% {-webkit-transform: scale(1, 1);transform: scale(1, 1);}
+ @keyframes visibility {
+     0% {
+        -webkit-transform: scale(0, 0);
+        transform: scale(0, 0);
+    }
+     30% {
+        -webkit-transform: scale(0.3, 0.3);
+        transform: scale(0.3, 0.3);
+    }
+     40% {
+        -webkit-transform: scale(0.4, 0.4);
+        transform: scale(0.4, 0.4);
+    }
+     50% {
+        -webkit-transform: scale(0.5, 0.5);
+        transform: scale(0.5, 0.5);
+    }
+     60% {
+        -webkit-transform: scale(0.6, 0.6);
+        transform: scale(0.6, 0.6);
+    }
+     70% {
+        -webkit-transform: scale(0.7, 0.7);
+        transform: scale(0.7, 0.7);
+    }
+     80% {
+        -webkit-transform: scale(0.8, 0.8);
+        transform: scale(0.8, 0.8);
+    }
+     90% {
+        -webkit-transform: scale(0.9, 0.9);
+        transform: scale(0.9, 0.9);
+    }
+     100% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
 }
  .modal_show {
      display: block;
      -webkit-animation-name: visibility;
-             animation-name: visibility;
+     animation-name: visibility;
      -webkit-animation-duration: 0.2s;
-             animation-duration: 0.2s;
+     animation-duration: 0.2s;
 }
  .modal_hidden {
      display: none;
@@ -1853,6 +1910,7 @@ body {
      background-color: rgba(32, 32, 32, 0.5);
      z-index: 9;
 }
-iframe {
-  border: 0px;
+ iframe {
+     border: 0px;
 }
+ 
