@@ -283,6 +283,7 @@ body {
      background-repeat: no-repeat;
      border-radius: 15px;
      background-color: rgb(181, 1, 32);
+     
 }
  .stock_element_2 {
      background-image: url("../img/backs/chocolate.jpg");
@@ -1913,4 +1914,3 @@ body {
  iframe {
      border: 0px;
 }
- 
