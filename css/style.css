@@ -356,6 +356,7 @@ body {
      width: 560px;
      border-radius: 15px;
      background-image: url("../img/backs/strawberry.jpg");
+     background-color: #ffffff;
 }
  .our_blog h2{
      display: block;
